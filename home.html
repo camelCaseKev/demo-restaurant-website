@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+File:    home.html
+Author:  Kevin Viren
+Date:    5/4/2024 (modified: 12/11/2024)
+Assignment: CIS1610 - Final Project
+-->
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Curious about the new restaurant in town that everyone is crazy about? Give us a try! Order some food online or in person!" />
+	<meta name="keywords" content="food, restaurant, burgers, pizza, seafood" />
+	<meta name="author" content="Kevin Viren" />
+	<title>Home - Eat Food Here</title>
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/mystyles.css" rel="stylesheet" />
+	
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js" defer></script>
+	<script src="js/showMap.js" defer></script>
+	
+</head>
+<body>
+	<div class="container">
+		<header class="row">
+			<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="home.html">Eat Food Here</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ex-navbar" aria-controls="ex-navbar" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="ex-navbar">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a href="home.html" class="nav-link active" aria-current="page">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="menu.php">Menu</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="maintenance.php">Maintenance</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="order.php">Order</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main class="row">
+			<div class="row">
+				<div class="col">
+					<div id="slide-show" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false">
+						<div class="carousel-indicators"></div>
+						<div class="carousel-inner"></div>
+							
+						<button class="carousel-control-prev" type="button" data-bs-target="#slide-show" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#slide-show" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+				<div class="col"> 
+					<h2>Casual Dining at its Finest</h2>
+					<p>We pride ourselves on serving the best burgers, pizza, and fresh fish in the area, all at an affordable price and in a relaxed and pleasurable atmosphere.</p>
+					<p>We hope you'll give us a try.</p>
+					<a href="menu.php" class="btn btn-danger">SEE MENU</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<h3>Our Location</h3>
+					<p>Even though we do deliver, we'd love to see you drop by. We don't bite!</p>
+				</div>
+				<div class="col">
+					<div id="gMap"></div>
+				</col>
+			</div>
+		</main>
+	</div>
+</body>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<p>&copy; 2024 | EatFoodHere.com</p>
+			</div>
+		</div>
+	</div>
+</footer>
+</html>

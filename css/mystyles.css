@@ -1,0 +1,103 @@
+/*File:   mystyles.css
+  Author: Kevin Viren
+  Date:   5/4/2024 (modified 12/14/2024)
+*/
+
+body {
+	background-color: #222222;
+	min-height: 500px;
+	height: 100%;
+}
+
+body div.container {
+	background-color: #e6e8eb;
+	padding-bottom: 50px;
+}
+
+div.container-fluid {
+	height: 70px;
+}
+
+footer div.container {
+	background-color: #a61122;
+	display: flex;
+	justify-content: center;
+	width: 90%;
+}
+
+div#bodyContainer {	
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+footer div.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+footer p {
+	color: #fefefe;
+	padding: 30px;
+	text-align: center;
+}
+
+nav {
+	background-color: #a61122;
+	margin-bottom: 45px;
+}
+
+div.carousel-item h3 {
+	font-weight: bold;
+	-webkit-text-stroke: 2px black;
+	text-stroke: 2px black; 
+	font-size: 2em;
+}
+
+div.carousel-item p {
+	color: white;
+	font-weight: bold;
+	-webkit-text-stroke: 1px black;
+	text-stroke: 1px black; 
+	font-size: 1.6em;
+}
+
+main#page-content {
+	display: flex;
+}
+
+table {
+	width: 100%;
+}
+
+th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+ul {
+  columns: 2;
+  max-height: 500px;
+  gap: 15px;
+}
+
+h3 {
+	margin-top: 40px;
+}
+
+#gMap {
+	width: 80%;
+	height: 350px;
+	border: 1px solid #a61122;
+}
+
+img.menuImg {
+	width: 100px;
+}
+
+form, h1, p.error{
+	padding-left: 10%;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+File:    header.html
+Author:  Kevin Viren
+Date:    12/11/2024
+Assignment: CIS1610 - Final Project
+-->
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Website description" />
+	<meta name="keywords" content="words, words" />
+	<meta name="author" content="Kevin Viren" />
+	<title><?php echo $page_title;?></title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/mystyles.css" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container" id="bodyContainer">
+		<header class="row">
+			<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="home.html">Eat Food Here</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ex-navbar" aria-controls="ex-navbar" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="ex-navbar">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a href="home.html" class="nav-link ">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link <?php if(basename($_SERVER['PHP_SELF']) == "menu.php") echo 'active aria-current="page"'?>" href="menu.php">Menu</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link <?php if(basename($_SERVER['PHP_SELF']) == "maintenance.php") echo 'active aria-current="page"'?>" href="maintenance.php">Maintenance</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link <?php if(basename($_SERVER['PHP_SELF']) == "order.php") echo 'active aria-current="page"'?>" href="order.php">Order</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="row">
+			<div class="col">
